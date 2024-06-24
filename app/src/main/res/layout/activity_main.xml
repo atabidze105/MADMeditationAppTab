@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#253334">
+
+    <FrameLayout
+        android:id="@+id/flayout_top"
+        android:layout_width="350dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btn_sidemenu"
+            android:layout_width="22dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/side_menu" />
+
+        <ImageView
+            android:id="@+id/imageview_logo"
+            android:layout_width="50dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="150dp"
+            android:src="@drawable/home_1" />
+
+        <ImageView
+            android:id="@+id/btn_profilepic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/coala" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flayout_bottom"
+        android:layout_width="260dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/btn_home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/home_1" />
+
+        <ImageView
+            android:id="@+id/btn_sounds"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="117.5dp"
+            android:src="@drawable/sounds_0" />
+
+        <ImageView
+            android:id="@+id/btn_profile"
+            android:onClick="nextprofile"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="235dp"
+            android:src="@drawable/profile_0" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flayout_block1"
+        android:layout_width="370dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/corners"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textview_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/alegreya_regular"
+            android:text="Заголовок блока"
+            android:textColor="#000000"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/textview_description1"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/alegreyasans_medium"
+            android:text="Кратенькое описание блока двумя строчками"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_more1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="95dp"
+            android:backgroundTint="#253334"
+            android:fontFamily="@font/alegreyasans_medium"
+            android:text="подробнее"
+            android:textSize="15dp"
+            app:cornerRadius="20px"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageview_image1"
+            android:layout_width="161dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/girl" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flayout_block2"
+        android:layout_width="370dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/corners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textview_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/alegreya_regular"
+            android:text="Заголовок блока"
+            android:textColor="#000000"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/textview_description2"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/alegreyasans_medium"
+            android:text="Кратенькое описание блока двумя строчками"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_more2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="95dp"
+            android:backgroundTint="#253334"
+            android:fontFamily="@font/alegreyasans_medium"
+            android:text="подробнее"
+            android:textSize="15dp"
+            app:cornerRadius="20px"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageview_image2"
+            android:layout_width="202dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/heart" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flayout_buttons"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="184dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_calm"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/corners"
+            android:src="@drawable/calm"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_relaxed"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="95dp"
+            android:background="@drawable/corners"
+            android:src="@drawable/relaxed"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_focused"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="190dp"
+            android:background="@drawable/corners"
+            android:src="@drawable/focused"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_anxious"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="285dp"
+            android:background="@drawable/corners"
+            android:src="@drawable/anxious" />
+
+        <TextView
+            android:id="@+id/textview_calm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="@font/alegreyasans_regular"
+            android:text="Спокойным"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textview_relaxed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="86dp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="@font/alegreyasans_regular"
+            android:text="Расслабленным"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textview_concentrated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="176dp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="@font/alegreyasans_regular"
+            android:text="Сосредоточенным"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textview_anxious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="282dp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="@font/alegreyasans_regular"
+            android:text="Взволнованныv"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textview_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="106dp"
+        android:fontFamily="@font/alegreya_regular"
+        android:text="C возвращением, Эмиль!"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_howdoyoufeel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="148dp"
+        android:fontFamily="@font/alegreyasans_regular"
+        android:text="Каким ты себя чувствуешь сегодня?"
+        android:textColor="#B3FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
